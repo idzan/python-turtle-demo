@@ -6,16 +6,16 @@ shmaggy.penup()
 shmaggy.goto((-100,75))
 shmaggy.pendown()
 
-def stars(turtle, size):
+def zvjezda(turtle, size):
     if size <= 10:
         return
     else:
         turtle.begin_fill()
         for i in range(20):
             turtle.forward(size)
-            stars(turtle, size/3)
+            zvjezda(turtle, size/3)
             turtle.left(216)
         turtle.end_fill()
 
-stars(shmaggy, 360)
+zvjezda(shmaggy, 360)
 turtle.done()
